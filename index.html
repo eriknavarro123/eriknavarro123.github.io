@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                Portfolio Erik Navarro Alvarez
+            </a>
+
+            <div class="nav-links">
+                <a href="#sobre-mi" data-es="Sobre mí" data-en="About me">Sobre mí</a>
+                <a href="#habilidades" data-es="Habilidades" data-en="Skills">Habilidades</a>
+                <a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a>
+                <a href="#formacion" data-es="Formación" data-en="Education">Formación</a>
+                <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+            </div>
+
+            <div class="nav-buttons">
+                <button id="languageButton" class="language-button">
+                    EN
+                </button>
+
+                <button
+                    id="themeButton"
+                    class="theme-toggle"
+                    aria-label="Cambiar a modo oscuro">
+                    <img
+                        id="themeIcon"
+                        src="img/sol.png"
+                        alt="Modo claro">
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+
+                <p class="small-title"
+                   data-es="Hola, soy"
+                   data-en="Hello, I am">
+                    Hola, soy
+                </p>
+
+                <h1>Erik Navarro Alvarez</h1>
+
+                <h2
+                    data-es="Estudiante y desarrollador"
+                    data-en="Student and developer">
+                    Estudiante y desarrollador
+                </h2>
+
+                <p
+                    data-es="Bienvenido a mi portfolio personal. Aquí puedes conocer mis habilidades, proyectos y formación."
+                    data-en="Welcome to my personal portfolio. Here you can discover my skills, projects and education.">
+                    Bienvenido a mi portfolio personal. Aquí puedes conocer
+                    mis habilidades, proyectos y formación.
+                </p>
+
+                <a
+                    href="#proyectos"
+                    class="main-button"
+                    data-es="Ver mis proyectos"
+                    data-en="View my projects">
+                    Ver mis proyectos
+                </a>
+
+            </div>
+        </section>
+
+
+        <section id="sobre-mi" class="section">
+
+            <div class="section-title">
+                <p>01</p>
+                <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-photo">
+                    <img src="img/foto.png" alt="Foto personal">
+                </div>
+
+                <div class="about-text">
+
+                    <h3 data-es="¿Quién soy?" data-en="Who am I?">
+                        ¿Quién soy?
+                    </h3>
+
+                    <p
+                        data-es="Soy estudiante interesado en el mundo de la tecnología y el desarrollo. Me gusta aprender nuevas herramientas y crear proyectos que me permitan mejorar mis conocimientos."
+                        data-en="I am a student interested in technology and development. I enjoy learning new tools and creating projects that allow me to improve my knowledge.">
+                        Soy estudiante interesado en el mundo de la tecnología
+                        y el desarrollo. Me gusta aprender nuevas herramientas
+                        y crear proyectos que me permitan mejorar mis conocimientos.
+                    </p>
+
+                    <p
+                        data-es="En este portfolio puedes encontrar algunos de los trabajos que he realizado durante mi formación."
+                        data-en="In this portfolio you can find some of the projects I have completed during my education.">
+                        En este portfolio puedes encontrar algunos de los trabajos
+                        que he realizado durante mi formación.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="habilidades" class="section">
+
+            <div class="section-title">
+                <p>02</p>
+                <h2 data-es="Habilidades" data-en="Skills">Habilidades</h2>
+            </div>
+
+            <div class="skills-text">
+
+                <div class="skill-category">
+
+                    <h3 data-es="Lenguajes" data-en="Languages">
+                        Lenguajes
+                    </h3>
+
+                    <p
+                        data-es="Principiante en Java, C#, HTML, CSS, JavaScript, SQL y PHP."
+                        data-en="Beginner in Java, C#, HTML, CSS, JavaScript, SQL and PHP.">
+                        Principiante en Java, C#, HTML, CSS, JavaScript, SQL y PHP.
+                    </p>
+
+                </div>
+
+                <div class="skill-category">
+
+                    <h3
+                        data-es="Entornos de desarrollo"
+                        data-en="Development environments">
+                        Entornos de desarrollo
+                    </h3>
+
+                    <p
+                        data-es="Principiante en Eclipse, Visual Studio 2022 y Visual Studio Code."
+                        data-en="Beginner in Eclipse, Visual Studio 2022 and Visual Studio Code.">
+                        Principiante en Eclipse, Visual Studio 2022 y Visual Studio Code.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="proyectos" class="section">
+
+            <div class="section-title">
+                <p>03</p>
+                <h2 data-es="Proyectos" data-en="Projects">Proyectos</h2>
+            </div>
+
+            <div class="filters">
+
+                <button
+                    class="filter-button active"
+                    data-filter="all"
+                    data-es="Todos"
+                    data-en="All">
+                    Todos
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="fets a clase"
+                    data-es="Hechos en clase"
+                    data-en="Classwork">
+                    Hechos en clase
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-filter="Trabajo personal"
+                    data-es="Trabajo personal"
+                    data-en="Personal work">
+                    Trabajo personal
+                </button>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card" data-category="fets a clase">
+
+                    <div class="project-number">01</div>
+
+                    <h3>Lista de la compra</h3>
+
+                    <p
+                        data-es="Proyecto de aplicación para utilizar una lista de la compra compartida entre dos personas."
+                        data-en="App project for using a shared shopping list between two people.">
+                        Proyecto de aplicación para utilizar una lista de la
+                        compra compartida entre dos personas.
+                    </p>
+
+                    <span class="project-tag">HTML / CSS</span>
+
+                    <a
+                        href="https://github.com/eriknavarro123?tab=repositories"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-es="Ver en GitHub"
+                        data-en="View on GitHub">
+                        Ver en GitHub
+                    </a>
+
+                </article>
+
+
+                <article class="project-card" data-category="fets a clase">
+
+                    <div class="project-number">02</div>
+
+                    <h3>Portfolio</h3>
+
+                    <p
+                        data-es="Portfolio personal creado con HTML, CSS y JavaScript."
+                        data-en="Personal portfolio created with HTML, CSS and JavaScript.">
+                        Portfolio personal creado con HTML, CSS y JavaScript.
+                    </p>
+
+                    <span class="project-tag">HTML / CSS / JS</span>
+
+                    <a
+                        href="https://github.com/eriknavarro123?tab=repositories"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-es="Ver en GitHub"
+                        data-en="View on GitHub">
+                        Ver en GitHub
+                    </a>
+
+                </article>
+
+
+                <article class="project-card" data-category="Trabajo personal">
+
+                    <div class="project-number">03</div>
+
+                    <h3>Proyecto Java</h3>
+
+                    <p
+                        data-es="Proyecto realizado utilizando Java para practicar programación."
+                        data-en="Project created using Java to practice programming.">
+                        Proyecto realizado utilizando Java para practicar programación.
+                    </p>
+
+                    <span class="project-tag">Java</span>
+
+                    <a
+                        href="https://github.com/eriknavarro123/ProyectoJava.git"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-es="Ver en GitHub"
+                        data-en="View on GitHub">
+                        Ver en GitHub
+                    </a>
+
+                </article>
+
+            </div>
+        </section>
+
+
+        <section id="formacion" class="section">
+
+            <div class="section-title">
+                <p>04</p>
+                <h2 data-es="Formación" data-en="Education">Formación</h2>
+            </div>
+
+            <div class="education-container">
+
+                <div class="education-card">
+
+                    <span class="education-year">2024 - Actualidad</span>
+
+                    <h3
+                        data-es="CFGS Desarrollo de Aplicaciones Multiplataforma"
+                        data-en="Higher Technician Diploma in Multiplatform Application Development">
+                        CFGS Desarrollo de Aplicaciones Multiplataforma
+                    </h3>
+
+                    <p
+                        data-es="Instituto Baix Camp"
+                        data-en="Baix Camp Institute">
+                        Instituto Baix Camp
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <span class="education-year">9/2023 - 7/2025</span>
+
+                    <h3
+                        data-es="Bachillerato Tecnológico"
+                        data-en="Technical high school program">
+                        Bachillerato Tecnológico
+                    </h3>
+
+                    <p
+                        data-es="Instituto Salvador Vilaseca"
+                        data-en="Salvador Vilaseca Institute">
+                        Instituto Salvador Vilaseca
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <span class="education-year">7/2025</span>
+
+                    <h3
+                        data-es="B1 en inglés"
+                        data-en="English Level B1">
+                        B1 en inglés
+                    </h3>
+
+                    <p
+                        data-es="Instituto Baix Camp"
+                        data-en="Baix Camp Institute">
+                        Instituto Baix Camp
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="cv-container">
+
+                <a
+                    href="documents/curriculum.pdf"
+                    class="main-button"
+                    target="_blank"
+                    data-es="Descargar CV"
+                    data-en="Download CV">
+                    Descargar CV
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section id="contacto" class="section contact-section">
+
+            <div class="section-title">
+                <p>05</p>
+                <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+            </div>
+
+            <div class="contact-content">
+
+                <p
+                    data-es="Puedes contactar conmigo a través de:"
+                    data-en="You can contact me through:">
+                    Puedes contactar conmigo a través de:
+                </p>
+
+                <a href="mailto:navarroalvarezerik@gmail.com">
+                    navarroalvarezerik@gmail.com
+                </a>
+
+                <p>
+                    GitHub:
+                    <a
+                        href="https://github.com/eriknavarro123?tab=repositories"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Mi GitHub
+                    </a>
+                </p>
+
+                <p>
+                    LinkedIn:
+                    <a
+                        href="https://www.linkedin.com/in/erik-navarro-alvarez-a78b53403"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Mi LinkedIn
+                    </a>
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Portfolio Erik Navarro Alvarez</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
